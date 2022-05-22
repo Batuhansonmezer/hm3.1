@@ -1,0 +1,9 @@
+<h1> Please add your new places </h1>
+
+<%= form_with :model => @place do |form| %>
+  <p>
+    <%= form.label "Name of the new place" %>
+    <%= form.text_field "name" %>
+  </p>
+  <%= form.submit %>
+<% end %>
